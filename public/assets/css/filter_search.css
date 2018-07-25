@@ -1,0 +1,114 @@
+.nested_category{
+    padding-left: 10px;
+    list-style: none;
+    margin-left: 5px;
+}
+.nested_category li{
+    line-height: 27px;
+}
+.sidebarsearch .calendar-position {
+    font-size: 20px;
+    position: absolute;
+    right: 26px;
+    top: 36px;
+}
+.sidebarsearch label{
+	font-size: 12px;
+}
+.filter-container label,.filter-container .alone{
+    font-size: 12px;
+    font-family: Avenir-Book;
+}
+.filter-container .filter-section{
+	font-size: 16px;
+}
+.activity-rating{
+   /* position: absolute;*/
+    bottom: 0;
+}
+input[type=checkbox] {
+         position: relative;
+         cursor: pointer;
+         margin-right: 5px;
+    }
+    input[type=checkbox]:before {
+         content: "";
+         display: block;
+         position: absolute;
+         width: 16px;
+         height: 16px;
+         top: 0;
+         left: 0;
+         border: 0.5px solid #555555;
+         border-radius: 3px;
+         background-color: white;         
+}
+    input[type=checkbox]:checked:after {
+         content: "";
+         display: block;
+         width: 5px;
+         height: 10px;
+         border: solid black;
+         border-width: 0 2px 2px 0;
+         -webkit-transform: rotate(45deg);
+         -ms-transform: rotate(45deg);
+         transform: rotate(45deg);
+         position: absolute;
+         top: 2px;
+         left: 6px;
+}
+span.comments {
+    vertical-align: middle;
+    font-family: Avenir-Book;
+    margin-left: 15px;
+}
+.activity-card-flex .activity-card-inner-content{
+    padding-left: 0px;
+}
+
+.activity-card-content{
+    border-bottom: 1px solid rgb(253, 253, 253);
+    border-image: linear-gradient(to right, rgba(255, 255, 255, 0) 33%,rgb(214, 214, 214) 33%,rgb(226, 226, 226) 97%,rgba(108,219185,141,0) 75%);
+    border-image-slice: 1;
+   /* content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 24%;
+    width: 74%;
+    border-bottom: 1px solid #d8d8d8;*/
+}
+.amount {
+    font-size: 11px;
+    border: 0;
+    color: #f6931f;
+    font-weight: bold;
+}
+.sidebarsearch .btn-start-search {
+   padding: 9px;
+  }
+.sidebarsearch input[type="text"]{
+    padding: 18px 5px;
+}
+.activity-card-details-body{
+    padding: 5px 0px;
+    min-height: 40px;
+    width: 80%;
+  } 
+ .activity-card-content button.wish {
+    background: #FBAF25;
+    border: none;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    height: 32px;
+    min-width: 34px;
+    border-color: #FBAF25;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    outline: none !important;
+    font-family: Avenir-Heavy;
+}
+.activity-card-image-container img {
+    max-height: 132px;
+}   

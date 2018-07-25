@@ -1,0 +1,68 @@
+.form-offer input[type=checkbox]:before, .form-offer input[type=radio]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 24px;
+    padding-left: 5px;
+    font-size: 18px;
+    height: 24px;
+    top: 0px;
+    left: 0;
+    border: 0.5px solid #555555;
+    border-radius: 3px;
+    background-color: white;
+    cursor: pointer;
+}
+.form-offer input[type="radio"] {
+    margin: 6px -3px 0;
+}
+.form-offer input[type=checkbox]:checked:after,.form-offer input[type=radio]:checked:after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 16px;
+    border: solid #00d8ff;
+    border-width: 0 1px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 7px;
+}
+
+.form-offer .form-control {
+    box-shadow: none;
+}
+.form-offer .autoSearch::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+.magin-0{
+    margin: 0px;
+}
+.form-offer #time_picker{
+    width: 50%;
+}
+.form-offer label.padding-top-0{
+    padding-top: 0px;
+}
+.form-offer .btn-xs.btn-remove-img{
+    line-height: 0.5px;
+}
+.m-list-offer .absolute-btm{
+    position: absolute;
+    bottom: -56px;
+}
+.chosen-container-multi .chosen-choices{
+    min-height: 40px;
+    background-image: linear-gradient(#fff 1%,#fff 15%);
+}

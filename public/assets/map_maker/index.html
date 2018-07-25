@@ -1,0 +1,70 @@
+
+<html lang="en" dir="ltr">
+<head>
+    
+    <script type='text/javascript' src='jquery-2.2.1.min.js'></script>
+ 
+  </head>
+<body class="ltr">
+   
+
+                                    <fieldset class="PagePostProject-fieldset address_hidden">
+                                        <legend class="PagePostProject-legend">Address</legend>
+                                        <ol>
+                                            <li class="form-step">
+                                                <div class="tg-inputwithicon">
+                                                    <i class="fa fa-crosshairs"></i>
+                                                    <input type="text" class="large-input focusable-field" placeholder="Your Location" name="location" id="address-autocomplete">
+                                                    <input type="hidden" id="latitude" name="latitude"  value="11.5625"/>
+                                                    <input type="hidden" id="longitude" name="longitude" value="104.916"/>
+                                                    <div class="map height-200px shadow" id="map"></div>
+                                                    <p class="note" style="opacity: 1">Drag the map marker to exact address.</p>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </fieldset>
+
+<link href="map-marker.css" type="text/css" rel="stylesheet">
+<script type='text/javascript' src='https://maps.google.com/maps/api/js?key=AIzaSyD_juL7CDD9Qz96Cyf4lvzed6GQ5FaSI9I&libraries=places&geometry&ver=2.2.1'></script>
+<script type='text/javascript' src='richmarker-compiled.js'></script>
+<script type='text/javascript' src='maps.js'></script>
+
+
+<script>
+    var _latitude = '11.5625';
+    var _longitude = '104.916';
+    var element = "map";
+    var color = '#9C27B0';
+    var zoom = '#9C27B0';
+    var getCity = false;
+    var path = 'http://localhost/opicts/phutthi/templates/my-theme/';
+    var Countries = 'kh';
+    if(Countries != ""){
+        var str = Countries;
+        var str_array = str.split(',');
+        var getCountry = [];
+        for(var i = 0; i < str_array.length; i++)
+        {
+            getCountry.push(str_array[i]);
+
+        }
+    }
+    else{
+        var getCountry = "all";
+    }
+    simpleMap(_latitude, _longitude, element, true);
+
+/*    $('#postadcity').on('change', function() {
+        var data = $("#postadcity option:selected").val();
+        var custom_data= $("#postadcity").select2('data')[0];
+        var latitude = custom_data.latitude;
+        var longitude = custom_data.longitude;
+        $('#latitude').val(latitude);
+        $('#longitude').val(longitude);
+        simpleMap(latitude, longitude, element, true);
+    });*/
+</script>
+<!-- If address mode enable: ADDRESS FIELD JAVASCRIPT -->
+
+    </body>
+</html>

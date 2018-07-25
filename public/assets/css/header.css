@@ -1,0 +1,9 @@
+body{
+	background-color: #000;
+}
+@media screen and (max-width: 991px)
+	a.navbar-brand {
+	    margin: 0 auto;
+	    padding: 5px 0;
+	}
+}

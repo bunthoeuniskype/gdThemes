@@ -1,0 +1,148 @@
+@font-face{font-family:'FontAwesome';src:url('../fonts/fontawesome-webfont.eot?v=4.3.0');src:url('../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'),url('../fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'),url('../fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'),url('../fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'),url('../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}
+.rating { 
+  border: none;
+  /*float: left;*/
+}
+.rating.position-rating{
+    position: absolute;
+    padding-left: 15px;
+}
+
+.rating > input { display: none; } 
+
+.rating > label:before { 
+  margin: 5px;
+  font-size: 2em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+
+#comment-reply{
+    position: absolute;
+    top: 6em;
+    left: 91%;
+    color: #FBAF25;
+    cursor: pointer;
+}
+/* CSS Test begin */
+.comment-box {
+    margin-top: 30px !important;
+}
+/* CSS Test end */
+
+.comment-box img {
+    width: 50px;
+    height: 50px;
+}
+.comment-box .media-left {
+    padding-right: 10px;
+    width: 65px;
+}
+.comment-box .media-body p {
+    /*border: 1px solid #ddd;*/
+    padding: 10px;
+}
+.comment-box .media-body .media p {
+    margin-bottom: 0;
+}
+.comment-box .media-heading {
+ /*   background-color: #f5f5f5;
+    border: 1px solid #ddd;*/
+    font-size: 14px;
+    font-family: Roboto-Regular;
+    padding: 7px 10px;
+    position: relative;
+    margin-bottom: -1px;
+}
+.comment-box .media-heading:before {
+  /*  content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-width: 1px 0 0 1px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 10px;
+    left: -6px;*/
+}
+.comment_list.m-t-30 p {
+    font-family: Avenir-Book;
+    font-size: 13px;
+    min-height: 33px;
+}
+.reply-comment-area, .reply-comment{
+	width: 100%;
+    max-height: 125px;
+}
+.comment-action-reply{
+    position: absolute;
+    padding: 12px 0px;
+    top: 8em;
+    left: 0;
+    width: 100%;
+    color: #FBAF25;
+    cursor: pointer;
+}
+.comment-action-reply ul{
+  padding-left: 0px;
+  list-style: none;
+}
+.comment-action-reply li{
+ float:left;
+}
+.comment-action-reply li a{
+    cursor: pointer;
+    color: #FBAF25;
+}
+.comment-reply{
+  margin: 6px 0px;
+}
+.btn-comment-reply {    
+    position: absolute;
+    left: 93%;
+    color: #fbaf25;
+    margin-top: -36px;
+    cursor: pointer;
+}
+.margin-0{
+  margin: 0px;
+}
+.comment-img img{
+    max-width: 50px;    
+}
+.comment{
+    padding-left: 20px;
+    padding-top: 46px;
+}
+#comment-submit {
+    position: absolute;
+    top: 9em;
+    left: 91%;
+    color: #FBAF25;
+    cursor: pointer;
+}
